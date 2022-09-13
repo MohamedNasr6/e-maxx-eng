@@ -40,6 +40,7 @@ Information regarding the subtree to which a vertex belongs is maintained with t
 For each edge, whether it belongs to the ends of different trees, can be determined in $O(1)$.
 Finally, the union of the two trees is carried out in $O(N)$ by a simple pass through `tree_id[]` array.
 Given that the total number of merge operations is $N-1$, we obtain the asymptotic behavior of $O(M \log N + N^2)$.
+(M -> The number of edges, N -> The number of nodes)
 
 ```cpp
 struct Edge {
